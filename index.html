@@ -563,22 +563,29 @@
             <textarea
               type="text"
               class="area-text"
-              id="#comment-label"
+              id="comment-label"
               name="text-area-text"
               placeholder="Text input"
             ></textarea>
           </div>
-          <label class="label-policy" for=""
-            >I accept the terms and conditions of the
-            <span class="policy-span"
-              ><a href="">Privacy Policy</a></span
-            ></label
-          >
-          <input
-            type="checkbox"
-            class="check-box visually-hidden"
-            name="privacy-policy"
-          />
+          <div class="privacy-policy-text">
+            <label class="label-policy" for="check-box">
+              <span class="active-icon"
+                ><svg height="8" width="10">
+                  <use href="./images/icons.svg#icon-active"></use></svg></span
+              >I accept the terms and conditions of the
+              <span class="policy-span"
+                ><a href="">Privacy Policy</a></span
+              ></label
+            >
+            <input
+              type="checkbox"
+              class="check-box-input visually-hidden"
+              name="privacy-policy"
+              value="true"
+              id="check-box"
+            />
+          </div>
           <button type="submit" class="button-send">Send</button>
         </form>
       </div>
