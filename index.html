@@ -489,7 +489,25 @@
             </li>
           </ul>
         </div>
-      </div>
+        <section class="subscribe-footer">
+          <p class="title-footer-subscribe">Subscribe</p>
+          <form class="subscribe-footer-form">
+            <label for="footer-subscreibe-email"></label>
+            <input
+            type="email"
+            placeholder="E-mail"
+            id="footer-subscreibe-email"
+            class="footer-subscreibe-input"
+            name="footer-subscreibe-email"
+            />
+            <button class="subscribe-button-footer" type="submit">Subscribe 
+              <svg class="subscribe-icon">
+              <use href="./images/icons.svg#icon-send" height="24" width="24">
+              </use>
+            </svg>
+            </button>
+          </form>
+        </section>
     </footer>
     <div class="modal-overlay">
       <div class="modal">
@@ -526,7 +544,7 @@
             <label class="label-in-put" for="phone-label">Phone</label>
             <div class="svg-icon-label">
               <input
-                type="text"
+                type="number"
                 id="#phone-label"
                 name="contact-phone"
                 class="input-text"
@@ -544,7 +562,7 @@
             <label class="label-in-put" for="email-label">Email</label>
             <div class="svg-icon-label">
               <input
-                type="text"
+                type="email"
                 id="#email-label"
                 name="contact-email"
                 class="input-text"
