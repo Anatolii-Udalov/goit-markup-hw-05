@@ -680,6 +680,7 @@ h6 {
     height: 120px;
     background-color: transparent;
     outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .area-text:focus {
@@ -721,7 +722,6 @@ h6 {
 
 .area-label {
     margin-bottom: 8px;
-    margin-bottom: 24px;
 }
 
 .text-area-label {
@@ -729,7 +729,7 @@ h6 {
 }
 
 .button-send {
-    width: 168px;
+    min-width: 169px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -740,10 +740,16 @@ h6 {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
     margin: 24px auto;
-    display: flex;
+    display: block;
     justify-content: center;
     border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.button-send:hover,
+.button-send:active {
+    background-color: #31d0aa;
 }
 
 .icon-in-put {
@@ -763,7 +769,7 @@ h6 {
 .label-policy {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: flex;
@@ -781,6 +787,11 @@ h6 {
 
 }
 
+.privacy-policy-text {
+    margin-bottom: 24px;
+}
+
+
 .label-policy span {
     width: 16px;
     height: 16px;
@@ -796,4 +807,9 @@ h6 {
     background-color: #404bbf;
     fill: #f4f4fd;
     border: none;
+}
+
+.span-label-user {
+    display: inline-flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
