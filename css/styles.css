@@ -529,11 +529,12 @@ h6 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .subscribe-footer-form {
     display: flex;
-    margin-top: 16px;
+    gap: 24px;
 }
 
 .subscribe-button-footer {
@@ -551,7 +552,6 @@ h6 {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    margin-left: 24px;
 }
 
 .footer-subscreibe-input {
